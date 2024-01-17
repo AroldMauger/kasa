@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar.jsx';
-import "./App.css";
+import "./sass/App.scss";
+import Header from './components/Navbar.jsx';
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Header />
     </div>
   )
 }

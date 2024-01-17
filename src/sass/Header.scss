@@ -1,6 +1,9 @@
-.navbar {
+.header-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
+    .navbar {
+        color:#FF6060;
+    }
 }
