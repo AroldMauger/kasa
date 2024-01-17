@@ -1,6 +1,6 @@
 import React from 'react'
 import "../sass/cards-container.scss";
-import Apartment from './components/Apartment.jsx';
+import Apartment from './Apartment.jsx';
 
 function CardsContainer() {
   return (
