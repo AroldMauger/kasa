@@ -2,8 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
 
     .navbar {
         color:#FF6060;
+        font-size: 24px;
+        font-weight: 500;
+        display: flex;
+        justify-content: end;
+        gap:57px;
     }
 }
