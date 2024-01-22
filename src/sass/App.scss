@@ -1,4 +1,4 @@
-body {
+main {
   margin:0px;
   padding: 0px;
   font-family: 'Montserrat', sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 @media screen and (width <= 1085px) { 
-  body {
+  main {
     margin-inline:40px;
   }
 }

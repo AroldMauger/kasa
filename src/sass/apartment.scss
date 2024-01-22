@@ -13,13 +13,13 @@
     font-size: 18px;
 }
 
-@media screen and (width <= 1085px) { 
+@media screen and (max-width: 1085px) { 
     .card {
         min-width: 340px;
     }
  }
 
- @media screen and (width <= 768px) { 
+ @media screen and (max-width: 768px) { 
     .card {
         padding-left:0px;
         min-width: 100%;
