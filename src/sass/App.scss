@@ -5,3 +5,9 @@ body {
   margin-inline:100px;
 
 }
+
+@media screen and (width <= 1085px) { 
+  body {
+    margin-inline:40px;
+  }
+}

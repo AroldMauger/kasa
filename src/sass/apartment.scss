@@ -1,3 +1,31 @@
 .card {
     background-color: #e33d3d;
+    min-width: 340px;
+    border-radius: 10px;
+    min-height: 340px;
+    display: flex;
+    align-items: end;
+    padding-left:20px;
+    padding-bottom: 20px;
+    color:white;
+    font-weight: 500 ;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
+
+@media screen and (width <= 1085px) { 
+    .card {
+        min-width: 340px;
+    }
+ }
+
+ @media screen and (width <= 768px) { 
+    .card {
+        padding-left:0px;
+        min-width: 100%;
+
+        p {
+            padding-left:20px;
+        }
+    }
+ }

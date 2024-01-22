@@ -5,7 +5,9 @@ import "../sass/apartment.scss";
 
 function Apartment() {
   return (
-    <div className='card'>Apartment</div>
+    <div className='card'>
+      <p>Apartment</p>
+    </div>
   )
 }
 

@@ -7,6 +7,8 @@ function CardsContainer() {
     <div className="all-cards_container">
         <Apartment/>
         <Apartment/>
+        <Apartment/>
+        <Apartment/>
 
     </div>
   )
