@@ -1,15 +1,16 @@
 import React from 'react'
 import "../sass/header.scss";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="header-home">
-        <div class="logo_container">
+        <NavLink to="/" class="logo_container">
             <img src="logo-red.png" alt="Logo de Kasa" />
-        </div>
+        </NavLink>
         <nav class="navbar">
-            <a>Accueil</a>
-            <a>À propos</a>
+          <NavLink to="/">Accueil</NavLink>
+          <NavLink to="/about">À propos</NavLink>
         </nav>
     </header>
   )
