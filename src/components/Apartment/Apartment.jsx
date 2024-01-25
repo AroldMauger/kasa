@@ -1,5 +1,5 @@
 import React from 'react'
-import "../sass/apartment.scss";
+import "./apartment.scss";
 import { Outlet, Link } from "react-router-dom";
 
 

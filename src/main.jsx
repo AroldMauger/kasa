@@ -1,33 +1,34 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import NotFound404 from './components/NotFound404/NotFound404.jsx';
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 
 const HeaderFooterLayout = () => {
   return <>
-    <Header/>
+  <main>
     <Outlet/>
-    <Footer/>
+  </main>
   </>
 }
 
 const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout/>,
+    errorElement: <NotFound404/>,
     children :[
       {
         path: "/",
-        element: <App/>,
-        errorElement: <NotFound404/>
+        element: <App/>
       },
       {
         path: "/apartments",
-        element: <ApartmentPage/>
+        element: <App/>
       },
       {
         path: "/about",
-        element: <About/>
+        element: <App/>
       },
     ],
   },
@@ -39,3 +40,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 
 )
+

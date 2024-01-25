@@ -1,9 +1,9 @@
 import React from 'react';
-import "./sass/app.scss";
-import Header from './layout/Header.jsx';
-import Banner from './components/Banner.jsx';
-import CardsContainer from './components/CardsContainer.jsx';
-import Footer from './layout/Footer.jsx';
+import "./app.scss";
+import Banner from './components/Banner/Banner.jsx';
+import CardsContainer from './components/CardsContainer/CardsContainer.jsx';
+import Header from './layout/Header/Header.jsx';
+import Footer from './layout/Footer/Footer.jsx';
 
 function App() {
   return (
