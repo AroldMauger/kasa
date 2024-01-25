@@ -13,16 +13,19 @@
     font-size: 18px;
 }
 
-@media screen and (max-width: 1085px) { 
+@media screen and (max-width: 1098px) { 
     .card {
         min-width: 340px;
     }
  }
 
  @media screen and (max-width: 768px) { 
+
+    .all-cards_container a {
+        width: 100%;
+    }
     .card {
         padding-left:0px;
-        min-width: 100%;
 
         p {
             padding-left:20px;

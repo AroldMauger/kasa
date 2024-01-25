@@ -1,29 +1,41 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+
+
+const HeaderFooterLayout = () => {
+  return <>
+    <Header/>
+    <Outlet/>
+    <Footer/>
+  </>
+}
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App/>,
+    element: <HeaderFooterLayout/>,
+    children :[
+      {
+        path: "/",
+        element: <App/>,
+        errorElement: <NotFound404/>
+      },
+      {
+        path: "/apartments",
+        element: <ApartmentPage/>
+      },
+      {
+        path: "/about",
+        element: <About/>
+      },
+    ],
   },
-  {
-    path: "/apartments",
-    element: <App/>
-  },
-  {
-    path: "/about",
-    element: <App/>
-  }
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
+
+  <RouterProvider router={router} />
+
 )
