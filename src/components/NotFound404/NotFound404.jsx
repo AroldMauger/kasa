@@ -7,7 +7,8 @@ import { Link } from "react-router-dom";
 
 function NotFound404() {
   return (
-    <main>
+    <div>
+      <main>
         <Header/>
         <div className="error">
             <div className="error_number">404</div>
@@ -16,8 +17,11 @@ function NotFound404() {
               <div className="error_back">Retourner sur la page d&apos;accueil</div>
             </Link>
         </div>
-       <Footer/>
-    </main>
+      </main>
+      <Footer/>
+    </div>
+  
+
   )
 }
 

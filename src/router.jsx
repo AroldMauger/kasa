@@ -1,16 +1,24 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import HomePage from './pages/HomePage/HomePage.jsx'
+import About from './pages/About/About.jsx'
+import ApartmentPage from './pages/ApartmentPage/ApartmentPage.jsx'
+
 import NotFound404 from './components/NotFound404/NotFound404.jsx';
+import Header from './layout/Header/Header.jsx';
+import Footer from './layout/Footer/Footer.jsx';
+
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 
 const HeaderFooterLayout = () => {
   return <>
   <main>
+    <Header/>
     <Outlet/>
   </main>
-  </>
+  <Footer/>
+   </>
 }
 
 const router = createBrowserRouter([
@@ -20,15 +28,15 @@ const router = createBrowserRouter([
     children :[
       {
         path: "/",
-        element: <App/>
+        element: <HomePage/>
       },
       {
         path: "/apartments",
-        element: <App/>
+        element: <ApartmentPage/>
       },
       {
         path: "/about",
-        element: <App/>
+        element: <About/>
       },
     ],
   },

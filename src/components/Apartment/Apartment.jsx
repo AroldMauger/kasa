@@ -6,7 +6,7 @@ import { Outlet, Link } from "react-router-dom";
 
 function Apartment() {
   return (
-    <Link to="/apartements">
+    <Link to="/apartments">
       <div className='card'>
             <p>Apartment</p>
       </div>
