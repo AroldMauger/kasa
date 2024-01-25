@@ -9,7 +9,8 @@ function Collapse() {
             <img className="drop" src="drop_closed.png"/>
         </p>
         <p className="collapse_content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsa repudiandae expedita delectus quis odio pariatur esse laborum. Doloribus deleniti dolorum ratione tempora accusantium magni ipsam distinctio quo laborum totam nisi veritatis ducimus nemo vel assumenda, minima temporibus laudantium culpa necessitatibus quam molestias, natus odio repellat? Harum in odio dolores!</p>
-    </div>  )
+    </div>  
+  )
 }
 
 export default Collapse

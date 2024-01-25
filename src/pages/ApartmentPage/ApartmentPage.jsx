@@ -6,13 +6,14 @@ import ApartmentLocation from '../../components/ApartmentLocation/ApartmentLocat
 import ApartmentTags from '../../components/ApartmentTags/ApartmentTags.jsx';
 import ApartmentOwner from '../../components/ApartmentOwner/ApartmentOwner.jsx';
 import ApartmentRating from '../../components/ApartmentRating/ApartmentRating.jsx';
+import ApartmentCarrousel from '../../components/ApartmentCarrousel/ApartmentCarrousel.jsx';
 
 
 
 function ApartmentPage() {
   return (
     <div className="apartment_page">
-
+        <ApartmentCarrousel/>
         <div className="apartment_header">
             <div className="apartment_banner_left">
             <ApartmentTitle/>
