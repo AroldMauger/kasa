@@ -1,10 +1,13 @@
 import React from 'react'
-import "./ApartementTags.scss";
+import "./ApartmentTags.scss";
 
 function ApartmentTags() {
   return (
-    <div>ApartmentTags</div>
-  )
+    <div className="apartment_tags">
+      <span className="apartment_tag">Cozy</span>
+      <span className="apartment_tag">Canal</span>
+      <span className="apartment_tag">Paris 10</span>
+    </div>    )
 }
 
 export default ApartmentTags

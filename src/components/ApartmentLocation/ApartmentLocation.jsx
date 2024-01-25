@@ -3,7 +3,7 @@ import "./ApartmentLocation.scss";
 
 function ApartmentLocation() {
   return (
-    <div>ApartmentLocation</div>
+    <h2 className="apartment_page_location">Paris, Île-de-France</h2>
   )
 }
 
