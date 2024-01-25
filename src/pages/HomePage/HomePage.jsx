@@ -1,5 +1,5 @@
 import React from 'react';
-import "./homepage.scss";
+import "./HomePage.scss";
 import Banner from '../../components/Banner/Banner.jsx';
 import CardsContainer from '../../components/CardsContainer/CardsContainer.jsx';
 import Header from '../../layout/Header/Header.jsx';

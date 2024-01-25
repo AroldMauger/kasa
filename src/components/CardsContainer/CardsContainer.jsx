@@ -1,5 +1,5 @@
 import React from 'react'
-import "./cards-container.scss";
+import "./CardsContainer.scss";
 import Apartment from '../Apartment/Apartment.jsx';
 
 function CardsContainer() {
