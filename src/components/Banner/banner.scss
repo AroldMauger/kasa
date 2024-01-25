@@ -32,3 +32,25 @@
     }
 }
 
+
+
+@media screen and (max-width : 768px) { 
+    .banner {
+        margin-bottom: 22px;
+        .banner_text {
+            text-align: start;
+            font-size: 36px;
+            line-height: 100%; 
+        }
+    }
+}
+
+@media screen and (max-width : 420px) { 
+    .banner {
+        height: 160px;
+        .banner_text {
+            font-size: 25px;
+        }
+    }
+    
+}

@@ -10,3 +10,10 @@
     display: flex;
     gap : 15px;
 }
+
+@media screen and (max-width : 485px) { 
+    .fa-star {
+        font-size: 20px;
+        margin-right: 2px;
+    }
+}

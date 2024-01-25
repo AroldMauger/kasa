@@ -8,3 +8,11 @@
     display: flex;
     gap : 10px;
 }
+
+@media screen and (max-width : 485px) { 
+    .apartment_tag {
+     font-size: 14;
+        padding : 3px 26px 3px 26px;
+        border-radius: 10px;
+    }
+}

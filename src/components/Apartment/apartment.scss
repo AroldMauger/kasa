@@ -20,15 +20,29 @@
  }
 
  @media screen and (max-width: 768px) { 
-
+    .all-cards_container {
+        gap:20px;
+    }
     .all-cards_container a {
         width: 100%;
     }
     .card {
         padding-left:0px;
-
         p {
             padding-left:20px;
         }
     }
  }
+
+ @media screen and (max-width : 420px) { 
+    .all-cards_container {
+        gap:20px;
+    }
+    .all-cards_container a {
+        width: 100%;
+    }
+    .card {
+        min-width: 100%;
+        }
+}
+  

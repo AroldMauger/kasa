@@ -5,3 +5,9 @@
     margin:0px;
     flex-grow: 1;
 }
+
+@media screen and (max-width : 485px) { 
+    .apartment_page_title {
+        font-size: 30px;
+    }
+}

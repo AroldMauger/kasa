@@ -1,0 +1,32 @@
+.about_banner {
+    margin: auto;
+    margin-top : 55px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 223px;
+    border-radius: 25px;
+    background: #000000;
+    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+
+}
+.about_banner_image {
+    opacity: 70%;
+    width: 100%;
+}
+
+@media screen and (max-width : 768px) { 
+    .about_banner {
+        margin-bottom : 10px;
+        margin-top : 20px;
+
+    }
+}
+
+@media screen and (max-width : 400px) { 
+    .about_banner {
+        height:100%;
+    }
+}

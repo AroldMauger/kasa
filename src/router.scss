@@ -10,3 +10,10 @@ main {
       margin-inline:40px;
     }
   }
+
+  @media screen and (max-width : 420px) { 
+    main {
+      margin-inline:20px;
+    }
+}
+  
