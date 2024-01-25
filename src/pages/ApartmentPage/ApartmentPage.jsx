@@ -4,6 +4,8 @@ import Collapse from '../../components/Collapse/Collapse.jsx';
 import ApartmentTitle from '../../components/ApartmentTitle/apartmentTitle.jsx';
 import ApartmentLocation from '../../components/ApartmentLocation/ApartmentLocation.jsx';
 import ApartmentTags from '../../components/ApartmentTags/ApartmentTags.jsx';
+import ApartmentOwner from '../../components/ApartmentOwner/ApartmentOwner.jsx';
+import ApartmentRating from '../../components/ApartmentRating/ApartmentRating.jsx';
 
 
 
@@ -18,7 +20,8 @@ function ApartmentPage() {
             <ApartmentTags/>
             </div>
             <div className="apartment_owner">
-            
+            <ApartmentOwner/>
+            <ApartmentRating/>
             </div>
         </div>
         <div className="apartment_description_area">
