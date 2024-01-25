@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import HomePage from './pages/HomePage/HomePage.jsx'
 import About from './pages/About/About.jsx'
 import ApartmentPage from './pages/ApartmentPage/ApartmentPage.jsx'
-
 import NotFound404 from './components/NotFound404/NotFound404.jsx';
 import Header from './layout/Header/Header.jsx';
 import Footer from './layout/Footer/Footer.jsx';
+import "./router.scss";
 
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 

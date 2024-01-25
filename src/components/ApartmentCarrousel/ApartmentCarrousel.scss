@@ -52,7 +52,11 @@
     margin-right: 35px;
     margin-top: 50px;
 }
-
+@media screen and (max-width: 1085px) { 
+    .button_next {
+        right:0px;
+    }
+  }
 .slide_counter {
     color: white;
     position: absolute;
