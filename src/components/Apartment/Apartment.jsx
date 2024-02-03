@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Apartment.scss";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
