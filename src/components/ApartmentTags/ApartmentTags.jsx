@@ -5,7 +5,7 @@ function ApartmentTags(props) {
   return (
       <div className="apartment_tags">
         {props.flat.tags.map((tag) => (
-          <span className="apartment_tag">{tag}</span>
+          <span key={tag} className="apartment_tag">{tag}</span>
         ))}
       </div>    
     )

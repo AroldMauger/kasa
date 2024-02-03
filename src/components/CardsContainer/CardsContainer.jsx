@@ -21,7 +21,7 @@ function CardsContainer() {
   return (
     <div className="all-cards_container">
     {apartments.map ((apartment) => (
-       <Apartment title={apartment.title} imageUrl={apartment.cover} id={apartment.id}/>))}
+       <Apartment title={apartment.title} imageUrl={apartment.cover} id={apartment.id} key={apartment.id}/>))}
     </div>
   )
 }
