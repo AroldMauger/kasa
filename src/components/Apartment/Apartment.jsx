@@ -4,11 +4,12 @@ import { Outlet, Link } from "react-router-dom";
 
 
 
-function Apartment() {
+function Apartment(props) {
   return (
     <Link to="/apartments">
       <div className='card'>
-            <p>Apartment</p>
+            <img className="cover-in-cards" src={props.imageUrl} alt="" />
+            <p className="title">{props.title}</p>
       </div>
     </Link>
    

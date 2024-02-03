@@ -4,11 +4,16 @@
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap:60px;
     margin-bottom: 50px;
 }
 
+
+.all-cards_container a {
+    display: flex;
+    flex-basis: 340px;
+}
 
 
 @media screen and (max-width: 1098px) { 
@@ -21,5 +26,14 @@
     flex-direction: column;
     margin-bottom: 27px;
     width: 100%;
+    }
+ }
+ @media screen and (max-width: 768px) { 
+
+    .all-cards_container {
+        gap:20px;
+    }
+    .all-cards_container a {
+        width: 100%;
     }
  }
