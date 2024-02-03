@@ -1,11 +1,11 @@
 import React from 'react'
 import "./ApartmentCarrousel.scss";
 
-function ApartmentCarrousel() {
+function ApartmentCarrousel(props) {
   return (
     <div className="carrousel_apartments">
     <div className="carrousel_image_container">
-        <img src="picture-about.png" alt="carrousel avec photos des appartements Kasa"     />
+        <img src={props.imageUrl} alt="carrousel avec photos des appartements Kasa"     />
     <span className="slide_counter">1/4</span> 
     </div>
     

@@ -1,13 +1,14 @@
 import React from 'react'
 import "./ApartmentTags.scss";
 
-function ApartmentTags() {
+function ApartmentTags(props) {
   return (
-    <div className="apartment_tags">
-      <span className="apartment_tag">Cozy</span>
-      <span className="apartment_tag">Canal</span>
-      <span className="apartment_tag">Paris 10</span>
-    </div>    )
+      <div className="apartment_tags">
+        {props.flat.tags.map((tag) => (
+          <span className="apartment_tag">{tag}</span>
+        ))}
+      </div>    
+    )
 }
 
 export default ApartmentTags

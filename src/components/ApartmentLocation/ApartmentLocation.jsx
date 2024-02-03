@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ApartmentLocation.scss";
 
-function ApartmentLocation() {
+function ApartmentLocation(props) {
   return (
-    <h2 className="apartment_page_location">Paris, Île-de-France</h2>
+    <h2 className="apartment_page_location">{props.location}</h2>
   )
 }
 
