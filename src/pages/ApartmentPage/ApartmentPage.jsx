@@ -44,8 +44,9 @@ function ApartmentPage() {
             </div>
         </div>
         <div className="apartment_description_area">
-        <Collapse/>
-        <Collapse/>
+        <Collapse title="Description" content={selectedApartment.description}/>
+        <Collapse title="Équipements" content={selectedApartment.equipments.map((equipement, index) => 
+                (<li key={index}> {equipement} </li>))}/>
         </div>
         
     </div>
