@@ -34,7 +34,7 @@ function ApartmentCarrousel(props) {
                 src={picture}
                 alt="carrousel avec photos des appartements Kasa"     
                 className={getClassName(i)}></img>))} 
-      <span className="slide_counter">1/4</span> 
+      <span className="slide_counter">{currentPicture + 1} / {pictures.length}</span> 
     </div>
     
     <div className="button_previous" onClick={moveToPrevious}>
