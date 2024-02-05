@@ -30,6 +30,11 @@
     margin-top: 25px;
     position: absolute;
     object-fit: cover;
+    opacity: 0;
+    transition : opacity 0.5s ease-in-out;
+    &.show {
+        opacity:1;
+    }
 }
 
 

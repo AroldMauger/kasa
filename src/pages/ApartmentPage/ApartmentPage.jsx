@@ -31,7 +31,7 @@ function ApartmentPage() {
 
   return (
     <div className="apartment_page">
-        <ApartmentCarrousel imageUrl={selectedApartment.cover}/>
+        <ApartmentCarrousel pictures={selectedApartment.pictures}/>
         <div className="apartment_header">
             <div className="apartment_banner_left">
             <ApartmentTitle title={selectedApartment.title}/>
