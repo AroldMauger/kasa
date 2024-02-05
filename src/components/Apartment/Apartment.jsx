@@ -3,6 +3,8 @@ import "./Apartment.scss";
 import { Link } from "react-router-dom";
 
 
+{/* On veut que apartmentId: props.id  soit accessible dans location.state de la nouvelle page. 
+L'id nous sert à charger les données correspondantes à un appartement en particulier */}
 
 function Apartment(props) {
   return (

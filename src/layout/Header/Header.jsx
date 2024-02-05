@@ -2,6 +2,8 @@ import React from 'react'
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
 
+{/*NavLink ajoute automatiquement une classe "active" au lien lorsqu'il correspond à l'URL actuelle. */}
+
 function Header() {
   return (
     <header className="header-home">

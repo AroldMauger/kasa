@@ -10,6 +10,8 @@ import "./router.scss";
 
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
+{/*Ici on crée un Layout pour une mise en page uniforme. 
+La balise <main> nous permet de définir des marges sur les côtés sans inclure le Footer */}
 
 const HeaderFooterLayout = () => {
   return <>
@@ -20,11 +22,11 @@ const HeaderFooterLayout = () => {
   <Footer/>
    </>
 }
-
+{/*Ici on définit le layout, la page 404 qui se charge en cas d'erreur et les 3 routes avec leurs composants */}
 const router = createBrowserRouter([
   {
     element: <HeaderFooterLayout/>,
-    errorElement: <NotFound404/>,
+    errorElement: <NotFound404/>, 
     children :[
       {
         path: "/",

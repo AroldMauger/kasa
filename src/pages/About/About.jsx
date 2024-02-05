@@ -6,7 +6,7 @@ import AboutBanner from '../../components/AboutBanner/AboutBanner.jsx'
 function About() {
   return (
     <>
-    <AboutBanner/>
+    <AboutBanner/>    {/* On modifie le texte en dur des composants Collapse à l'aide de "title" et "content" */}
     <div className='about_container'>
     <Collapse title="Fiabilité" content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>
         <Collapse title="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

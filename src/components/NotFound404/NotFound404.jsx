@@ -1,7 +1,6 @@
 import "./NotFound404.scss";
 import Header from '/src/layout/Header/Header.jsx'
 import Footer from '/src/layout/Footer/Footer.jsx'
-
 import { Link } from "react-router-dom";
 
 
