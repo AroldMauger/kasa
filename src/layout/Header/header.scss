@@ -31,6 +31,7 @@
 
 @media screen and (max-width : 580px) { 
     .header-home {
+
         .logo_container {
             width: 30%;
             img {
@@ -41,6 +42,10 @@
             width: 70%;
             font-size: 22px;
             gap:10px;
+            text-transform: uppercase;
+
         }
+       
     }
+    
 }

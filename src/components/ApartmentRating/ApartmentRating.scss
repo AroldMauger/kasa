@@ -8,14 +8,17 @@
 
 .apartment_rating {
     display: flex;
-    gap : 15px;
+    gap : 12px;
     color:#E3E3E3;
-
 }
+
 
 @media screen and (max-width : 485px) { 
     .fa-star {
         font-size: 20px;
         margin-right: 2px;
+    }
+    .apartment_rating {
+        gap : 5px;
     }
 }
