@@ -7,6 +7,8 @@ import ApartmentTags from '../../components/ApartmentTags/ApartmentTags.jsx';
 import ApartmentOwner from '../../components/ApartmentOwner/ApartmentOwner.jsx';
 import ApartmentRating from '../../components/ApartmentRating/ApartmentRating.jsx';
 import ApartmentCarrousel from '../../components/ApartmentCarrousel/ApartmentCarrousel.jsx';
+import NotFound404Content from '../../components/NotFound404Content/NotFound404Content.jsx';
+
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
 
@@ -21,7 +23,11 @@ function ApartmentPage() {
 
     {/* Dans le useEffect on laisse le deuxième argument vide, car il n'y a pas de dépendances. 
     On veut que la fonction fetchApartmentData soit exécutée une seule fois au chargement de la page */}
-    useEffect(fetchApartmentData, []);
+    useEffect(() => {
+        if (location.state) {
+            fetchApartmentData();
+        }
+    }, [location.state]);
 
     {/* Dans fetch on va chercher avec .find l'appartment dont l'id passé dans le location.state correspond à l'id dans le fichier json */}
     function fetchApartmentData () {
@@ -35,9 +41,10 @@ function ApartmentPage() {
   }
   {/*Puisque selectedApartment est définie sur null par défaut et que le fetch met un peu de temps à récupérer les données, 
     il faut gérer le cas d'affichage initial de selectedApartment */}
-  if (selectedApartment == null) return <div>Loading...</div>;
+    if (location.state == null) return <NotFound404Content/>;
+    if (selectedApartment == null) return <div>Loading...</div>;
 
-
+    console.log(location)
   return (
     <div className="apartment_page">
         <ApartmentCarrousel pictures={selectedApartment.pictures}/>
