@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ApartmentCarrousel.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function ApartmentCarrousel(props) {
 
@@ -10,11 +10,33 @@ function ApartmentCarrousel(props) {
   La fonction setCurrentPicture mettra à jour la variable currentPicture*/}
   const [currentPicture, setCurrentPicture] = useState(0);
 
+  useEffect(() => {
+    displaySlideCounter();
+  }, [pictures]);
+
   {/*Si l'index de l'image correspond à la valeur dans le useState (par défaut 0), alors on l'affiche en ajoutant une class show */}
   const getClassName = (i) => {
     if (i === currentPicture) return "show";
     return "";
   };
+
+  const displaySlideCounter = () => {
+    const slideCounter = document.querySelector(".slide_counter");
+    const buttonPrevious = document.querySelector(".button_previous");
+    const buttonNext = document.querySelector(".button_next");
+
+    if (slideCounter) {
+      if (pictures.length === 1) {
+        slideCounter.style.display = "none";
+        buttonPrevious.style.display = "none";
+        buttonNext.style.display = "none";
+      } else {
+        slideCounter.style.display = "block";
+        buttonPrevious.style.display = "flex";
+        buttonNext.style.display = "flex";
+      }
+    }
+  }
 
   {/*POUR AFFICHER L'IMAGE PRÉCÉDENTE :
   - on définit une variable newCurrentPicture qui correspond à currentPicture -1 (donc par défaut 0 car plus haut on définit useState(0)) 
