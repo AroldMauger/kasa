@@ -7,7 +7,7 @@ import CardsContainer from '../../components/CardsContainer/CardsContainer.jsx';
 function HomePage() {
   return (
     <div>
-        <Banner/>
+        <Banner imageUrl={"picture-main.png"} title={"Chez vous, partout et ailleurs"}/>
         <CardsContainer/>
     </div>
   )
