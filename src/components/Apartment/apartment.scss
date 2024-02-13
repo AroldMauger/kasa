@@ -2,7 +2,6 @@
     border-radius: 10px;
     display: flex;
     align-items: end;
-    padding-left:20px;
     padding-bottom: 20px;
     color:white;
     font-weight: 500 ;
@@ -10,8 +9,7 @@
     font-size: 18px;
     position:relative;
     width: 100%;
-    min-width: 340px;
-    min-height: 340px;
+   height: 100%;
 }
 
 .title {
@@ -28,10 +26,12 @@
     filter: brightness(0.8);
 }
 
-@media screen and (max-width: 1098px) { 
+@media screen and (max-width: 1024px) { 
     .card {
         min-width: 340px;
         font-size: 28px;
+        padding-left:0px;
+
     }
  }
 
@@ -59,3 +59,6 @@
         }
 }
   
+
+
+
