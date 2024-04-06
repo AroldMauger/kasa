@@ -1,7 +1,6 @@
 {
   "name": "kasa",
   "private": true,
-  "homepage": "https://aroldmauger.github.io/kasa/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
