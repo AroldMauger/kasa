@@ -9,7 +9,7 @@ L'id nous sert à charger les données correspondantes à un appartement en part
 function Apartment(props) {
   return (
     <Link 
-      to="/apartments" 
+      to="/kasa/apartments" 
       state={{
         apartmentId : props.id
       }}>      
