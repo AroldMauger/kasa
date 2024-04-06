@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "private": true,
-  "homepage": "https://aroldmauger.github.io/kasa/",
+  "homepage": "https://aroldmauger.github.io/kasa",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -10,8 +10,9 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "sass": "sass --watch sass/*.scss:assets/css/style.css",
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -7,6 +7,7 @@ import NotFound404 from './components/NotFound404/NotFound404.jsx';
 import Header from './layout/Header/Header.jsx';
 import Footer from './layout/Footer/Footer.jsx';
 import "./router.scss";
+import { BrowserRouter } from 'react-router-dom';
 
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
@@ -46,8 +47,9 @@ const router = createBrowserRouter([
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter basename="/kasa">
+    <RouterProvider router={router} />
+  </BrowserRouter>
+);
 
-  <RouterProvider router={router} />
-
-)
 
