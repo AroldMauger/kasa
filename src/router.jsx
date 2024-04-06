@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound404/>, 
     children :[
       {
-        path: "/",
+        path: "/kasa",
         element: <HomePage/>
       },
       {
