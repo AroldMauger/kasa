@@ -31,7 +31,7 @@ function ApartmentPage() {
 
     {/* Dans fetch on va chercher avec .find l'appartment dont l'id passé dans le location.state correspond à l'id dans le fichier json */}
     function fetchApartmentData () {
-      fetch ("kasa/data.json")
+      fetch ("data.json")
       .then ((response) => response.json())
       .then((apartments) => {
           const apartment = apartments.find((apartment) => apartment.id === location.state.apartmentId);
