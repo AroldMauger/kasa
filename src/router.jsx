@@ -33,11 +33,11 @@ const router = createBrowserRouter([
         element: <HomePage/>
       },
       {
-        path: "/apartments",
+        path: "/kasa/apartments",
         element: <ApartmentPage/>
       },
       {
-        path: "/about",
+        path: "/kasa/about",
         element: <About/>
       },
     ],
